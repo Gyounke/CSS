@@ -1,0 +1,136 @@
+/* Tentative perso
+.orange_square{
+    height: 100px;
+    width: 100px;
+    background-color: orangered;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+.col-4>div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(15, 139, 240);
+    border: 1px solid black;
+    align-items: center;  
+}
+
+.col-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6{
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+* {
+    margin: 0; /* marge = 0 */
+}
+
+/* Exercice 1 */
+
+.container {   /* mise en place des marges */
+    margin-top: 60px; 
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.row {  /* rendre le contenu mobile dans l'élément row */
+    display: flex;
+}
+
+.col-6 { 
+    margin-top: 20px;
+    flex: 1;  /* Indique au contenu qu'il peut prendre l'entièreté du col-6 donc la moitié de row  */
+    position: relative; 
+}
+
+p {
+    font-size: 20px; /* taille de la police */
+}
+
+h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.animation {
+    position: absolute;
+    width: 80%;
+    background-color: rgba(136, 132, 132, 0.7);
+    height: 25px;
+    top: 46px; /*distance à la partie supérieure de l'élément contenant */
+    animation: surligner 5s ease-in-out 0s infinite alternate; /* fonction qui permet l'animation : nom durée effetSurLeComportement delay répétition enchaînement */ 
+}
+
+@keyframes surligner { /* Caractéristiques de l'animation */
+    0% {
+        top: 46px;
+    }
+
+    100% {
+        top: 185px;
+    }
+}
+
+.col-6:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.rouge {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid black;
+    animation: change-background 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes change-background {
+
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: rgba(255, 196, 0, 0.582);
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+/* Exercice 2 */
+
+.col-4{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.carre{
+    height: 200px;
+    width: 200px;
+    background-color: turquoise;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: all 2s;
+}
+
+.col-4:first-child:hover .carre{
+    transform: rotateX(180deg);  /* Réalise une rotation autour de l'axe des abscisses*/
+}
+
+.col-4:nth-child(2):hover .carre{
+    transform: rotateY(180deg);  /* Réalise une rotation autour de l'axe des ordonnées */
+}
+
+.col-4:nth-child(3):hover .carre{
+    transform: rotateZ(180deg);  /* Réalise une rotation autour de l'axe des cotes */
+}

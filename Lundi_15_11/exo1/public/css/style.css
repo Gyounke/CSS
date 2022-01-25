@@ -1,0 +1,17 @@
+section{
+    display: flex;
+}
+
+div{
+    background-color: red;
+    height: 100px;
+    margin: 10px;
+    flex: auto;  /*ou 1 ça marche aussi,n chaque div prend 1/6 de la place*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>div:nth-of-type(4){
+    flex: 2; /* flex-grow:2*/
+}

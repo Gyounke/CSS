@@ -1,0 +1,253 @@
+
+body{  /* application à tous les éléments*/
+    margin: 30%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav{ /*Nav bar */
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.links{  /* box links de la nav bar */
+    display: flex;
+    margin:10px;
+}
+
+.links>a{  /*liens hypertext de la nav bar */
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+margin: 10px;
+font-size: smaller;
+}
+
+.start>p{
+    text-transform: uppercase;
+}
+
+.banner{
+    background-color: #DC3545;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.start{
+    margin: 0px;
+}
+
+.subBanner{
+    align-items: center;
+}
+
+.banner>img{
+    height: 80px;
+}
+
+.subBanner>h2{
+    text-transform: uppercase;
+}
+
+.subBannerBis>ul{
+    display: flex;  
+}
+
+ul{margin: 0px;}
+
+ul>li{
+    flex:1;
+    font-size: 10px;
+    width: 120px;
+    margin: 0px;
+}
+
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title>h2{
+    text-transform: uppercase;
+}
+
+.port_img>img{
+    height: 60px;
+    margin: 5px;
+}
+
+.port_img{
+    width: 50%;
+}
+
+.about{
+    background-color: #DC3545;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    
+}
+
+.contenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 10px;
+}
+
+.contenu_un{
+    display: flex;
+    flex: 0.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 10px;
+}
+
+.contenu_deux{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 10px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.form{
+    text-transform: none;
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.150);
+    width: 150%;
+}
+
+textarea{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.150);
+    width: 250px;
+    outline: none;
+}
+
+button{
+    background-color: red;
+    color: white;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+footer{
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 10px;
+    padding: 20px;
+    margin: 0;
+    align-items: center;
+}
+
+
+.around>img{
+    height: 20px;
+}
+
+.location{
+    flex:1;
+    text-align: center;
+}
+
+.around{
+    flex: 1;
+    text-align: center;
+    
+}
+
+.about_free{
+    flex:1;
+    text-align: center;
+}
+
+.copy{
+    background-color: #1A252F;
+    margin:0;
+    text-align: center;
+    font-size: small;
+}
+
+.copy>p{
+    margin:0;
+    color: white;
+}
+
+span{
+    color: turquoise;
+}
+
+@media screen and (max-width:768px){
+    
+    body{
+        width: 350px;
+    }
+    
+    .banner{
+        margin: 0px;
+        flex-wrap: nowrap;
+    }  
+    
+    .subBanner{
+        margin:0px;
+        padding: 0px;
+    }
+
+    .subBannerBis{
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .port_img{
+        width: 100%;
+        text-align: center;
+    } 
+
+    input{
+        width: 90%;
+    }
+
+    footer{
+        padding: 0px;
+        margin: 0px;
+    }
+}

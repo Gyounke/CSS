@@ -1,0 +1,59 @@
+@media screen and (min-width:1024px){
+    .square1{
+        height: 33vw;
+        width: 33vw;
+        background-color: red;
+    }
+
+    .square2{
+        height: 33vw;
+        width: 33vw;
+        background-color: green;
+    }
+
+    .square3{
+        height: 33vw;
+        width: 33vw;
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    .square1{
+        height: 33vw;
+        width: 50vw;
+        background-color: red;
+    }
+
+    .square2{
+        height: 33vw;
+        width: 50vw;
+        background-color: green;
+    }
+
+    .square3{
+        height: 33vw;
+        width: 50vw;
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .square1{
+        height: 33vw;
+        width: 100vw;
+        background-color: red;
+    }
+
+    .square2{
+        height: 33vw;
+        width: 100vw;
+        background-color: green;
+    }
+
+    .square3{
+        height: 33vw;
+        width: 100vw;
+        background-color: orange;
+    }
+}
